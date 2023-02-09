@@ -1,11 +1,14 @@
 {
+  "homepage": "http://Saurabh31415.github.io/MERN-HoopersHub-Social-Media-App",
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
 
   },
   "keywords": [],
